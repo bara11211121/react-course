@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Card } from "./components/Card";
+import "./App.css";
+import { Count } from "./components/Count";
+import { Fruit } from "./components/Fruit";
 
+const classmates = [
+  { name: "Sally", age: 15 },
+  { name: "Jessica", age: 65 },
+  { name: "Henry", age: 80 },
+];
+const fruit = {
+  weight: 125,
+  name: 'apple',
+  price: 48,
+}
 function App() {
-  const [count, setCount] = useState(0)
-
+ 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div>
+      <h1 className="title">Hello world!</h1>
+      {classmates.map((item) => (
+        <div>
+          <span>Name: {item.name} </span>
+          <span>Age: {item.age}</span>
+        </div>
+      ))}
+      <Card age={60} name={"Bara"} />
+      <Count />
+      <Fruit weight={125} name={'apple'} price={48}/> 
+    </div>
+  );
 }
 
-export default App
+export default App;
