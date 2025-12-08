@@ -4,7 +4,11 @@
   padding: 2rem;
   text-align: center;
 }
-.title{
+.title {
   color: pink;
   border-bottom: 1px solid blue;
+}
+.nav-button {
+  border-radius: 20px;
+  background-color: lightblue;
 }
