@@ -11,3 +11,12 @@ export const Card = (props: CardProps) => {
     </div>
   );
 };
+export const ButtonCard = (props: CardProps) => {
+  const { name, age } = props;
+  return (
+    <div>
+      <div>My name is {name}</div>
+      <div>My age is {age}</div>
+    </div>
+  );
+};

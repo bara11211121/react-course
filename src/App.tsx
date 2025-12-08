@@ -2,6 +2,7 @@ import { Card } from "./components/Card";
 import "./App.css";
 import { Count } from "./components/Count";
 import { Fruit } from "./components/Fruit";
+import { Header } from "./components/Header";
 import Link from "./components/Link";
 
 const classmates = [
@@ -14,9 +15,11 @@ const fruit = {
   name: "apple",
   price: 48,
 };
+
 function App() {
   return (
     <div>
+      <Header />
       <h1 className="title">Hello world!</h1>
 
       {classmates.map((item) => (
