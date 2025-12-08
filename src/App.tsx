@@ -17,8 +17,8 @@ function App() {
  
   return (
     <div>
-      <h1 className="title">Hello world! Cocododo</h1>
-      <h1 className="title">Here is Henry</h1>
+      <h1 className="title">Hello world!</h1>
+      
       {classmates.map((item) => (
         <div>
           <span>Name: {item.name} </span>
