@@ -1,7 +1,8 @@
-import { Count } from "../Count";
+import { AiFillBug } from "react-icons/ai";
 
-export const Header = () => (
-  <div>
-    <Count />
-  </div>
-);
+const Header = ({<AiFillBug>,children}) =>{
+  return (
+  <div><AiFillBug />{children}</div>)
+}
+
+export { Header};

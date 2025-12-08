@@ -4,6 +4,7 @@ import { Count } from "./components/Count";
 import { Fruit } from "./components/Fruit";
 import { Header } from "./components/Header";
 import Link from "./components/Link";
+import { AiFillBug } from "react-icons/ai";
 
 const classmates = [
   { name: "Sally", age: 15 },
@@ -19,7 +20,8 @@ const fruit = {
 function App() {
   return (
     <div>
-      <Header />
+      <Header><div>Travel</div></Header>
+      
       <h1 className="title">Hello world!</h1>
 
       {classmates.map((item) => (
