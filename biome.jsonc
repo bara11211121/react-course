@@ -3,6 +3,5 @@
   "extends": [
     "ultracite/core",
     "ultracite/react"
-  ],
-  ""
+  ]
 }
