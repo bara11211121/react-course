@@ -10,7 +10,7 @@ export const ProfileCard = ({name, intro, children}:CardProps)=>{
     return(
         <div>
             <div>{children}</div>
-            <div>我的名字是{name}</div>
+            <div>{name}</div>
             <div>{intro}</div>
         </div>
     );
