@@ -26,6 +26,11 @@ const profileList = [
 ];
 
 const defaultFruit = ["🍎", "🍒", "🍓", "🍉", "🍍"];
+
+// 1. 先有一個空的array state
+// 2. 按下按鈕加入一項待辦事項（可以自己決定待辦事項是什麼
+// 3. 顯示在畫面上
+
 function App() {
   const [fruitList, setFruitList] = useState<string[]>(defaultFruit);
 
