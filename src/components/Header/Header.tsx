@@ -5,7 +5,7 @@ const navList = ["Travel", "Explore", "Flights", "Hotels", "Vacation Rentals"];
 const Header = () => (
   <div>
     {navList.map((item) => (
-      <Button key={`nav-item-${item}`}>
+      <Button key={item}> 
         <AiFillBug />
         {item}
       </Button>
