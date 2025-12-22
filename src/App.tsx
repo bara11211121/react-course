@@ -24,7 +24,7 @@ const profiles = [
   { id: 3, name: "桃樂比", intro: "喜歡工作" },
 ];
 
-function App() {
+export const App = () => {
   return (
     <div>
       <Header />
@@ -63,4 +63,4 @@ function App() {
   );
 }
 
-export default App;
+// export default App;
