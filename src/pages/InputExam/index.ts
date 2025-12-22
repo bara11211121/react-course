@@ -1,0 +1,1 @@
+export { InputExam } from "./InputExam";

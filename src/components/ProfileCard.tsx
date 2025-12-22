@@ -1,17 +1,16 @@
 import type { ReactNode } from "react";
 
 interface CardProps {
-    name:string;
-    intro:string;
-    children:ReactNode;
+  name: string;
+  intro: string;
+  children: ReactNode;
 }
-export const ProfileCard = ({name, intro, children}:CardProps)=>{
-    
-    return(
-        <div>
-            <div>{children}</div>
-            <div>{name}</div>
-            <div>{intro}</div>
-        </div>
-    );
+export const ProfileCard = ({ name, intro, children }: CardProps) => {
+  return (
+    <div>
+      <div>{children}</div>
+      <div>{name}</div>
+      <div>{intro}</div>
+    </div>
+  );
 };
