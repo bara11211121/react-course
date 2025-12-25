@@ -1,0 +1,57 @@
+.homeBg {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeCard {
+  background: #fff;
+  padding: 40px 32px;
+  border-radius: 20px;
+  box-shadow: 0 6px 32px rgba(0, 0, 0, 0.1);
+  min-width: 340px;
+  max-width: 90vw;
+  text-align: center;
+}
+
+.homeTitle {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #f59e42;
+  margin-bottom: 18px;
+  letter-spacing: 2px;
+}
+
+.homeHi {
+  font-size: 1.2rem;
+  color: #64748b;
+  margin-bottom: 28px;
+}
+
+.homeBtnGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.homeBtn {
+  padding: 12px 0;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #38bdf8 0%, #818cf8 100%);
+  color: #fff;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(56, 189, 248, 0.1);
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+.homeBtn:hover {
+  background: linear-gradient(90deg, #0ea5e9 0%, #6366f1 100%);
+  transform: translateY(-2px) scale(1.04);
+}
