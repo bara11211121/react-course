@@ -13,6 +13,7 @@ export const Home = () => {
           onClick={() => {
             navigate("/dodo-list");
           }}
+          type="button"
         >
           dodo list
         </button>
@@ -22,6 +23,7 @@ export const Home = () => {
           onClick={() => {
             navigate("/gua");
           }}
+          type="button"
         >
           gua profile
         </button>
@@ -31,6 +33,7 @@ export const Home = () => {
           onClick={() => {
             navigate("/input-exam");
           }}
+          type="button"
         >
           input exam
         </button>
@@ -40,6 +43,7 @@ export const Home = () => {
           onClick={() => {
             navigate("/app");
           }}
+          type="button"
         >
           app
         </button>
