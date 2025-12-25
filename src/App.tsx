@@ -3,7 +3,7 @@ import "./App.css";
 import { Count } from "./components/Count";
 import { Fruit } from "./components/Fruit";
 import { Header } from "./components/Header";
-import Link from "./components/Link";
+import {Link} from "./components/Link";
 import { ProfileCard } from "./components/ProfileCard";
 
 
@@ -17,7 +17,7 @@ const fruit = {
   name: "apple",
   price: 48,
 };
-const todoStuff = [{ todo: "read" }, { todo: "shower" }, { todo: "sleep" }];
+const todoStuffList = [{ todo: "read" }, { todo: "shower" }, { todo: "sleep" }];
 const profiles = [
   { id: 1, name: "呱呱蛙", intro: "喜歡大聲唱歌" },
   { id: 2, name: "美樂蒂", intro: "喜歡睡覺" },
@@ -63,5 +63,4 @@ export const App = () => {
   );
 }
 
-// export default App;
 

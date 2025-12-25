@@ -7,6 +7,13 @@ export const DodoList = () =>{
         setTodos([...todos, inputValue]);
         setInputValue("");
     }
+    const deletTodo = (index) =>{
+        const newTodos = [...todos];
+        newTodos.splice(index,1);
+        setTodos(newTodos);
+        
+
+    }
     
     return(
       <div>  
@@ -22,10 +29,18 @@ export const DodoList = () =>{
             <h4>check list here:</h4>
             <ul>
                 {todos.map((todo,index) =>
-                <ul key={index}>{todo}</ul>
+                <ul key={index}>{todo}
+                    <button onClick={deletTodo}>
+                        完成
+                    </button>
+                </ul>
                 )}
             </ul>
         </div>
+
+     
+          
       </div>
-    );
+    
+  );
 };
