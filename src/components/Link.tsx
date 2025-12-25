@@ -4,8 +4,8 @@ interface LinkProps {
   url: string;
   children: ReactNode;
 }
-const PhotoLink = ({ url, children }: LinkProps) => (
+export const Link = ({ url, children }: LinkProps) => (
   <a href={url}>{children}</a>
 );
 
-export default PhotoLink;
+

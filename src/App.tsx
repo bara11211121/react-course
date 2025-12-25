@@ -3,7 +3,7 @@ import "./App.css";
 import { Count } from "./components/Count";
 import { Fruit } from "./components/Fruit";
 import { Header } from "./components/Header";
-import Link from "./components/Link";
+import {Link} from "./components/Link";
 import { ProfileCard } from "./components/ProfileCard";
 
 
