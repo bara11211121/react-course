@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
 
-
-
 export const Home = () => {
   const [value, setValue] = useState("");
   const navigate = useNavigate();
@@ -11,31 +9,39 @@ export const Home = () => {
       <div>I am home page</div>
       <div>Hi</div>
       <div>
-        <button onClick={() => {
-          navigate("/dodo-list")
-        }}> 
-        dodo list
+        <button
+          onClick={() => {
+            navigate("/dodo-list");
+          }}
+        >
+          dodo list
         </button>
       </div>
       <div>
-        <button onClick={() => {
-          navigate("/gua")
-        }}> 
-        gua profile
+        <button
+          onClick={() => {
+            navigate("/gua");
+          }}
+        >
+          gua profile
         </button>
       </div>
       <div>
-        <button onClick={() => {
-          navigate("/input-exam")
-        }}> 
-        input exam
+        <button
+          onClick={() => {
+            navigate("/input-exam");
+          }}
+        >
+          input exam
         </button>
       </div>
       <div>
-        <button onClick={() => {
-          navigate("/app")
-        }}> 
-        app
+        <button
+          onClick={() => {
+            navigate("/app");
+          }}
+        >
+          app
         </button>
       </div>
     </div>
