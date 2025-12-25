@@ -1,0 +1,100 @@
+.dodoBg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f6f8fa;
+}
+
+.dodoCard {
+  background: #fff;
+  padding: 32px 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  min-width: 350px;
+  max-width: 90vw;
+}
+
+.dodoTitle {
+  text-align: center;
+  color: #2d3748;
+  margin-bottom: 24px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.inputRow {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.input {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 16px;
+}
+
+.addBtn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #38bdf8;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(56, 189, 248, 0.08);
+  transition: background 0.2s;
+}
+.addBtn:hover {
+  background: #0ea5e9;
+}
+
+.listTitle {
+  color: #64748b;
+  margin-bottom: 12px;
+}
+
+.todoList {
+  list-style: none;
+  padding: 0;
+}
+
+.emptyTip {
+  color: #94a3b8;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f1f5f9;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.todoText {
+  font-size: 16px;
+  color: #334155;
+}
+
+.doneBtn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: #f87171;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 12px;
+  transition: background 0.2s;
+}
+.doneBtn:hover {
+  background: #ef4444;
+}
