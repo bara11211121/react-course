@@ -1,16 +1,42 @@
 import { useState } from "react";
-
+interface todosInterface {
+  index: number;
+  text: string;
+  isEditing: boolean;
+}
 export const DodoList = () => {
   const [inputValue, setInputValue] = useState("");
-  const [todos, setTodos] = useState<string[]>([]);
+  const [todos, setTodos] = useState<todosInterface[]>([]);
+
   const addTodo = () => {
     setTodos([...todos, inputValue]);
     setInputValue("");
   };
-  const deletTodo = (index: number) => {
+  const deleteTodo = (index: number) => {
     const newTodos = [...todos];
     newTodos.splice(index, 1);
     setTodos(newTodos);
+  };
+  const startEdit = (index: number) => {
+    setTodos(
+      todos.map((todo) =>
+        todo.index === index ? { ...todo, isEditing: true } : todo
+      )
+    );
+  };
+  const saveEdit = (index: number) => {
+    setTodos(
+      todos.map((todo) =>
+        todo.index === index ? { ...todo, isEditing: false } : todo
+      )
+    );
+  };
+  const handleEditChange = (index: number, newText: string) => {
+    setTodos(
+      todos.map((todo) =>
+        todo.index === index ? { ...todo, text: newText } : todo
+      )
+    );
   };
 
   return (
@@ -28,13 +54,26 @@ export const DodoList = () => {
       <div>
         <h4>check list here:</h4>
         <ul>
-          {todos.map((todo, index) => (
-            <ul key={index}>
-              {todo}
-              <button type="button" onClick={() => deletTodo(index)}>
-                完成
-              </button>
-            </ul>
+          {todos.map((todo) => (
+            <li key={todo.index}>
+              {todo.isEditing ? (
+                <>
+                  <input
+                    value={todo.text}
+                    onChange={(e) =>
+                      handleEditChange(todo.index, e.target.value)
+                    }
+                  />
+                  <button onClick={() => saveEdit(todo.index)}>儲存</button>
+                </>
+              ) : (
+                <>
+                  <span>{todo.text}</span>
+                  <button onClick={() => deleteTodo(todo.index)}>X</button>
+                  <button onClick={() => startEdit(todo.index)}>編輯</button>
+                </>
+              )}
+            </li>
           ))}
         </ul>
       </div>

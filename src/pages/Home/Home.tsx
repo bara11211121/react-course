@@ -29,6 +29,7 @@ export const Home = () => {
       <div>Hi</div>
       <div>
         <button
+          className="m-5"
           onClick={() => {
             navigate("/dodo-list");
           }}
